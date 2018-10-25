@@ -32,15 +32,22 @@ debugger;
       return state
 }
 }
-function itemCounter(state=[{count:0}],action){
- // debugger;
+function itemCounter(state=0,action){
+  debugger;
+/*  if (typeof state === 'undefined') {
+  return(
+ //   state.concat({count:0})
+state.count=0
+    
+  )
+} */
   switch (action.type)
   {
     case ADD_TODO:
-  /*   return( state.count++
-  ) */
+    return( state=state+1
+  )
     case TOGGLE_TODO:
-    return( state.count--
+    return( state=state-1
     )
     default:
     return state
