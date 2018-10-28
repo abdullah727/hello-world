@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 
 const Footer=()=>{
+    debugger
     return(
         <div>
             <span class="itemsLeft"> items left</span>

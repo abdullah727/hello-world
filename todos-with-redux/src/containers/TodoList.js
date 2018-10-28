@@ -1,5 +1,6 @@
 import { connect } from 'react-redux'
 import TodoItems from '../components/TodoItems'
+import Footer from '../components/Footer'
 import {toggleTodo} from '../actions'
 const mapStateToProps = state => {
   debugger;
