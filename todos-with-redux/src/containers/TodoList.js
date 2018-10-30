@@ -19,5 +19,8 @@ const mapDispatchToProps = dispatch => {
 const TodoList = connect(
   mapStateToProps,
   mapDispatchToProps
-)(TodoItems)
-export default TodoList
+);
+//TodoList(TodoItems)
+ const FirstConnectedComponent = TodoList(TodoItems);
+ const SecondConnectedComponent = TodoList(Footer);
+export default (FirstConnectedComponent,SecondConnectedComponent)
